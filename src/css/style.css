@@ -1,0 +1,218 @@
+/* Reset margin and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+}
+
+/* Navbar styling enhancements */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 2rem;
+    background-color: #004d99; /* Darker shade for contrast */
+    color: #ffffff;
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+}
+
+.nav-links a, .nav-links form button {
+    margin: 0 15px;
+    text-decoration: none;
+    color: #ffffff;
+    background: none;
+    border: none;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.nav-links form button {
+    padding: 8px 16px;
+    border-radius: 5px;
+    border: 1px solid #ffffff; /* Add border to make the button stand out */
+}
+
+/* Hover effect for links and button */
+.nav-links a:hover, .nav-links form button:hover {
+    color: #ffdb4d; /* Golden color for hover state */
+}
+
+/* Logo adjustments */
+.logo img {
+    height: 60px; /* Slightly larger */
+}
+
+/* Dropdown enhancements */
+.dropdown-content a:hover {
+    background-color: #007bff; /* Use a different color for dropdown hover */
+    color: white;
+}
+
+/* Utility classes for alignment */
+.justify-space-between {
+    justify-content: space-between;
+}
+
+.align-right {
+    margin-left: auto;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .nav-links a, .nav-links form {
+        font-size: 0.9rem;
+    }
+
+    nav {
+        flex-direction: column;
+        padding: 1rem;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .nav-links a, .nav-links form button {
+        margin: 5px 0; /* Adjust spacing for mobile */
+    }
+
+    .align-right {
+        align-items: center;
+        width: 100%;
+        justify-content: center;
+        margin: 0;
+    }
+}
+
+.books-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px; /* Adjust based on your preference */
+    justify-content: center;
+}
+
+.book-box {
+    border: 1px solid #ccc;
+    padding: 10px;
+    width: 200px; /* Adjust based on your preference */
+    text-align: center;
+}
+
+.book-image {
+    width: 100%; /* Makes the image fill the container */
+    height: 180px;
+    margin-bottom: 10px;
+}
+
+.book-box button {
+    background-color: #004d99;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    width: 100%;
+    margin-top: 10px;
+}
+
+.book-box button:hover {
+    background-color: #007bff;
+}
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto; /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%; /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button */
+.close, #cancelBorrow {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus,
+#cancelBorrow:hover,
+#confirmBorrow:hover {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+#confirmBorrow, #cancelBorrow {
+    padding: 10px 20px;
+    margin: 10px 5px 0 5px;
+    border: none;
+    cursor: pointer;
+}
+
+#confirmBorrow {
+    background-color: #4CAF50; /* Green */
+    color: white;
+}
+
+#cancelBorrow {
+    background-color: #f44336; /* Red */
+    color: white;
+}
+
+footer {
+    background-color: #004d99;
+    color: #6c757d;
+    text-align: left;
+    padding: 10px 20px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+footer {
+    background-color: #004d99; /* Match this color with your navbar's background color */
+    color: #ffffff; /* Adjust text color for better visibility against the dark background */
+    text-align: left;
+    padding: 10px 20px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-content a {
+    color: #ffffff; 
+}
